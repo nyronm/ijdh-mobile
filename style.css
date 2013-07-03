@@ -1,0 +1,1487 @@
+/* @override 
+	http://ijdhdev/wp-content/themes/ijdh/style.css */
+/*
+	Theme Name: IJDH ver-2
+	Template: boilerplate
+*/
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+ 
+ /* @group BASE */
+ 
+ /* =============================================================================
+    HTML5 display definitions
+    ========================================================================== */
+ 
+ article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+ audio:not([controls]) { display: none; }
+ [hidden] { display: none; }
+ 
+ 
+ /* =============================================================================
+    Base
+    ========================================================================== */
+ 
+ /*
+  * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+  * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+  */
+ 
+ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+ 
+ html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+ 
+ body { margin: 0; font-size: 1em; line-height: 1.4; }
+ 
+ /*
+  * Remove text-shadow in selection highlight: h5bp.com/i
+  * These selection declarations have to be separate
+  * Also: hot pink! (or customize the background color to match your design)
+  */
+ 
+ ::-moz-selection{ background: #506DBC; color: #fff; text-shadow: none; } 
+ ::selection { background: #506DBC; color: #fff; text-shadow: none; } 
+ 
+ /* =============================================================================
+    Links
+    ========================================================================== */
+ 
+ a { color: #00e; outline: none; }
+ a:visited { color: #00e; }
+ a:hover { color: #A91625; }
+ a:focus { outline: thin dotted; }
+ 
+ /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+ a:hover, a:active { outline: 0; }
+ 
+ 
+ /* =============================================================================
+    Typography
+    ========================================================================== */
+ 
+ abbr[title] { border-bottom: 1px dotted; }
+ 
+ b, strong { font-weight: bold; }
+ blockquote { margin: 1em 40px; }
+ 
+ dfn, em { font-style: italic; }
+ 
+ /*hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }*/
+ 
+ ins { background: #ff9; color: #000; text-decoration: none; }
+ 
+ mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+ 
+ /* Redeclare monospace font family: h5bp.com/j */
+ pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+ 
+ /* Improve readability of pre-formatted text in all browsers */
+ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+ 
+ q { quotes: none; }
+ q:before, q:after { content: ""; content: none; }
+ 
+ small { font-size: 85%; }
+ 
+ /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+ sup { top: -0.5em; }
+ sub { bottom: -0.25em; }
+ 
+ 
+ /* =============================================================================
+    Lists
+    ========================================================================== */
+ 
+ ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+ dd { margin: 0 0 0 40px; }
+ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+ 
+ 
+ /* =============================================================================
+    Embedded content
+    ========================================================================== */
+ 
+ /*
+  * 1. Improve image quality when scaled in IE7: h5bp.com/d
+  * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+  */
+ 
+ img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+ 
+ /*
+  * Correct overflow not hidden in IE9
+  */
+ 
+ svg:not(:root) { overflow: hidden; }
+ 
+ 
+ /* =============================================================================
+    Figures
+    ========================================================================== */
+ 
+ figure { margin: 0; }
+ 
+ 
+ /* =============================================================================
+    Forms
+    ========================================================================== */
+ 
+ form { margin: 0; }
+ fieldset { border: 0; margin: 0; padding: 0; }
+ 
+ /* Indicate that 'label' will shift focus to the associated form element */
+ label { cursor: pointer; }
+ 
+ /*
+  * 1. Correct color not inheriting in IE6/7/8/9
+  * 2. Correct alignment displayed oddly in IE6/7
+  */
+ 
+ legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+ 
+ /*
+  * 1. Correct font-size not inheriting in all browsers
+  * 2. Remove margins in FF3/4 S5 Chrome
+  * 3. Define consistent vertical alignment display in all browsers
+  */
+ 
+ button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+ 
+ /*
+  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+  */
+ 
+ button, input { line-height: normal; }
+ 
+ /*
+  * 1. Display hand cursor for clickable form elements
+  * 2. Allow styling of clickable form elements in iOS
+  * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+  */
+ 
+ button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+ 
+ /*
+  * Re-set default cursor for disabled elements
+  */
+ 
+ button[disabled], input[disabled] { cursor: default; }
+ 
+ /*
+  * Consistent box sizing and appearance
+  */
+ 
+ input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+ input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+ 
+ /*
+  * Remove inner padding and border in FF3/4: h5bp.com/l
+  */
+ 
+ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+ 
+ /*
+  * 1. Remove default vertical scrollbar in IE6/7/8/9
+  * 2. Allow only vertical resizing
+  */
+ 
+ textarea { overflow: auto; vertical-align: top; resize: vertical; }
+ 
+ /* Colors for form validity */
+ input:valid, textarea:valid {  }
+ input:invalid, textarea:invalid { background-color: #f0dddd; }
+ 
+ 
+ /* =============================================================================
+    Tables
+    ========================================================================== */
+ 
+ table { border-collapse: collapse; border-spacing: 0; }
+ td { vertical-align: top; }
+ 
+ 
+ /* =============================================================================
+    Chrome Frame Prompt
+    ========================================================================== */
+ 
+ .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+ 
+ /* @end */
+ 
+ 
+/* ==|== primary styles =====================================================
+   Author:
+   ========================================================================== */
+   
+/* @group FONTS */
+
+body {
+	font-family:  Arial, Helvetica, "Helvetica Neue", Geneva, sans-serif;
+	font-size: 100%;
+}
+
+a {
+	color: #506DBC;
+}
+
+p {
+	font-size: .8em;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Ubuntu Condensed','Arial Narrow',sans-serif;
+	letter-spacing: -0.03em;
+	font-weight: normal;
+	color: #222;
+	
+	/*font-family: 'LeagueGothicRegular';
+	letter-spacing: .3px; it works better with the font Gothic League*/
+}
+
+h1 a, h2 a, h3 a, h4 a {
+	text-decoration: none;
+	color: #222;
+}
+
+h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+.content h2 em {
+	font-weight: normal;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+.content h1 {
+	font-size: 2.3em;
+	line-height: 1em;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.content em {
+	font-weight: bold;
+}
+
+@font-face {
+   font-family: 'LeagueGothicRegular';
+   src: url('fonts/League_Gothic-webfont.eot');
+   src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/League_Gothic-webfont.woff') format('woff'),
+        url('fonts/League_Gothic-webfont.ttf') format('truetype'),
+        url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* @end */
+
+/* @group MAIN NAVIGATION */
+   
+.menu-header {
+	float: right;
+}
+
+.menu li {
+	float: left;
+	position: relative;
+}
+
+ul#menu-main-nav {
+	float: left;
+}
+
+#menu-main-nav li {
+	margin-right: 2px;
+}
+
+#menu-main-nav li:nth-last-of-type(1) {
+	margin-right: 0;
+}
+
+
+
+ul#menu-main-nav li a {
+	font: 1.2em 'LeagueGothicRegular';
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.95);
+	letter-spacing: .6px;
+	background-color: #506DBC;
+	padding: 3px 25px;
+	padding-top: 6px;
+	display: block;		
+}
+
+#menu-main-nav li.current-menu-item a,
+#menu-main-nav li:hover a,
+#menu-main-nav li.current-page-ancestor a,
+#menu-main-nav li.current-menu-ancestor a,
+.sub-menu li.current-menu-item a {
+	background-color: #A91625;
+}
+
+
+.sub-menu li.current-menu-item {
+	margin-left: -2px;
+}
+
+.sub-menu li.current-menu-item > a:hover {
+	padding-left: 15px !important;
+}
+
+.sub-menu { 
+	display: none;
+	position: absolute;
+	width: 960px;
+	margin-left: -465px;
+	margin-top: 6px;
+}
+/* SUB MENU FIX POSITIONING */
+/* ABOUT */
+body.page-id-30341 .sub-menu, body.parent-pageid-30341 .sub-menu{
+	margin-left: 168px;
+}
+/* OUR WORK */
+body.tax-advocacy .sub-menu{
+	margin-left: -298px !important;
+}
+
+/* TAKE ACTION */
+body.page-id-30970 .sub-menu, body.page-id-31941 .sub-menu, body.parent-pageid-30970 .sub-menu, body.category-1849 .sub-menu{
+	margin-left: -285px !important;
+}
+
+body.category-1853 .sub-menu{
+	margin-left: -205px;
+}
+/* TOPICS */
+body.category-topics .sub-menu, body.category-1830 .sub-menu, body.category-1829 .sub-menu, body.category-1832 .sub-menu, body.category-1854 .sub-menu, body.category-1834 .sub-menu, body.category-343 .sub-menu, body.category-1833 .sub-menu, body.category-1831 .sub-menu{
+	margin-left: -350px;
+}
+/* RESOURCES */
+body.page-id-34777 .sub-menu, body.category-2111 .sub-menu, body.category-1973 .sub-menu, body.parent-pageid-34777 .sub-menu, body.category-1975 .sub-menu, body.category-1976 .sub-menu{
+	margin-left: -250px;
+}
+/* SUB MENU FIX POSITIONING */
+.sub-menu li {
+	margin-right: 0 !important;
+	padding-right: 2px;
+	background: url('images/separator.jpg') no-repeat right;
+}
+
+.sub-menu li.current-menu-item {
+	background: none;
+}
+
+.sub-menu li.current-menu-item a:hover {
+	padding-right: 15px !important;
+	margin-right: 0px !important;
+}
+
+
+.sub-menu li.current-menu-item a,
+.sub-menu li:hover a {
+	background-color: #A91625 !important;
+	padding-top: 0px !important;
+	border-top: 1px solid #bc1a2b;
+	-moz-box-shadow: 0px 0px 1px #111;
+  -webkit-box-shadow: 0px 0px 1px #111;
+  box-shadow: 0px 0px 2px #222;
+}
+
+.sub-menu li:hover {
+	margin-left: -2px;
+	margin-right: 2px !important;
+	padding: 0;
+}
+
+.sub-menu li:nth-last-of-type(1) {
+	padding-right: 0;
+}
+
+.sub-menu a {
+	background-color: #2E3B72 !important;
+	font-size: 18px !important;
+	padding: 1px 15px !important;
+	padding-bottom: 0 !important;
+}
+
+.sub-menu a:hover {
+	background-color: #A91625 !important;
+	padding-left: 17px !important;
+	padding-right: 17px !important;
+	margin-right: -2px !important;
+}
+
+.current-menu-ancestor .sub-menu, .current-menu-item .sub-menu{ 
+	display:block;
+}
+
+.page-id-30341 #container,
+.parent-pageid-30341 #container,
+.category-cholera #container,
+.category-human-rights #container,
+.category-news #container, .category #container, .page-id-31945 #container, .page-parent #container, .page-child #container{
+	border-top: 35px solid #2E3B72;
+}
+li#menu-item-30398 #container, 
+li.menu-item-type-taxonomy #container, 
+li.menu-item-object-advocacy #container, .menu-item-30398 #container, #menu-item-30972 #container{
+	border-top: 35px solid #2E3B72;
+}
+
+   
+   /* @end */
+      
+/* @group MAIN */
+   
+
+body.tax-advocacy #container {
+	border-top: 35px solid #2E3B72;
+}
+.topics {
+	text-transform: uppercase;
+}
+#container {
+	padding: 40px 0;
+	background-color: #e1e5f4;
+	border-top: 1px solid #f5f5f5;
+	-moz-box-shadow: 0px 0px 1px #a5a5a5;
+	-webkit-box-shadow: 0px 0px 1px #a5a5a5;
+	box-shadow: 0px 0px 1px #a5a5a5;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;	
+}
+
+header, #main_footer {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+#content {
+	padding: 0 10px;
+	float: left;
+}
+
+header h1 {
+	height: 135px;
+	width: 360px;
+	float: left;
+	margin-bottom: 0;
+	
+}
+header > .utility, header > #donate {
+	float: right;
+	width:255px;
+}
+header h1 a {
+	color: transparent;
+	height: 135px;
+	width: 360px;
+	display: block;
+}
+
+header h1 a:hover {
+	color: transparent;
+}
+
+#primary {
+  	width: 620px;
+  	margin-right: 20px;
+	float: left;
+}
+
+.content {
+	background-color: #f5f5f5;
+	width: 580px !important;
+	padding: 20px;
+	-moz-box-shadow: 0px 0px 1px #999;
+	-webkit-box-shadow: 0px 0px 1px #999;
+	box-shadow: 0px 0px 1px #999;
+}
+
+body.category-topics #blog_roll, body.tax-advocacy  #blog_roll{
+	padding-bottom: 20px;
+}
+body.category-topics #blog_roll h1, body.tax-advocacy  #blog_roll h1{
+	padding: 10px 10px 5px 10px;
+	margin: 0;
+}
+body.tax-advocacy #blog_roll .page-content{
+	background: #f5f5f5;
+	margin: 0 0 10px 0;
+	padding: 0 15px 20px 15px;
+	
+}
+body.tax-advocacy #blog_roll .page-content li, body.category-topics #blog_roll .page-content li {
+	float: none;
+	display: inline;
+	border: 0px !important;
+	box-shadow: none;
+	clear: both;
+	width: 420px;
+}
+body.tax-advocacy #blog_roll .page-content ul {
+	clear: both;
+	margin-bottom: 20px;
+	padding: 0 15px !important; 
+}
+body.tax-advocacy #blog_roll .page-content p {
+	padding: 0 15px 15px 15px;
+}
+/*
+body.category-topics #blog_roll ul li.post{
+	margin-left: 5px;
+	margin-right: 5px;
+
+}
+*/
+
+.alignleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+aligncenter, img.aligncenter { 
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	display: block;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+.page-id-17 p {
+	display: inline-block;	
+}
+
+.page-id-17 p:nth-of-type(1) {
+	margin-top: 0;
+}
+
+.page-id-17 p:nth-last-of-type(1) {
+	margin-bottom: 0;
+}
+
+.page-id-17 img:nth-last-of-type(1) {
+	margin-bottom: 0 !important;
+}
+/*
+h2.entry-title > .entry-meta {
+	margin-bottom: 20px !;
+}*/
+
+.entry-meta {
+	font-size: .8em;
+	margin-top: -17px;
+/*	margin-bottom: 15px;*/
+	display: inline-block;
+}
+
+.entry-meta a {
+	color: #222;
+	text-decoration: none;
+}
+
+.entry-meta a:hover {
+	color: #A91625;
+}
+
+.author {
+	font-weight: bold;
+}
+
+.entry-utility {
+	font-size: .8em;
+	margin: 30px 0 15px;
+}
+
+body.blog .entry-content{
+	width: 270px;
+}
+.entry-content ul li {
+	font-size: .8em;
+}
+#nav-below {
+	height: 18px;
+	padding-top: 10px;
+	border-top: 0px solid #e0e5f3; /* 1px to 0px*/
+	position: relative;
+	bottom: -10px;
+}
+#nav-above {
+	height: 18px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e0e5f3;
+	clear: both;
+}
+
+.nav-previous a,
+.nav-next a {
+	font-family: 'LeagueGothicRegular';
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.nav-previous {
+	float: left;
+}
+
+.nav-next {
+	float: right;
+}
+
+
+/* @group SLIDESHOW NO-PLUGIN */
+
+#slider_container { 
+    width: 620px;
+    height: 471px;
+    text-align: center;
+}
+
+#slider {
+	background-color: #555;
+	width: 620px;
+	height: 455px; /* 447px */
+	overflow: hidden;
+	position: relative;
+	float: left;
+	-moz-box-shadow: 0px 0px 1px #999;
+	-webkit-box-shadow: 0px 0px 1px #999;
+	box-shadow: 0px 0px 1px #999;
+}
+
+#slider > div {
+	position: absolute;
+}
+
+#slider > div:nth-of-type(1) {
+	z-index: 999;
+}
+
+.post-info {
+	text-align: left;
+	background-color: #506DBC;
+	width: 590px;
+	height: 100px;
+	padding: 8px 15px 10px;
+	bottom: 0;
+}
+
+.post-info h2,
+.post-info h2 a,
+.post-info p {
+	color: rgba(255, 255, 255, 0.95);
+	margin: 0;
+}
+.post-info h2{
+	margin-bottom: 5px;
+	font-size: 2.5rem;
+}
+.post-info h2 a {
+	font: .8em 'LeagueGothicRegular';
+	letter-spacing: .6px;
+}
+
+.post-info p {
+	opacity: .9;
+	line-height: 1.1;
+}
+#slider_pagination {
+	margin: 0;
+	margin-top: 4px;
+	padding: 0;
+	display: inline-block;
+	list-style: none;
+}
+
+#slider_pagination li {
+	margin: 0 5px;
+	float: left;
+}
+
+#slider_pagination li a {
+	text-indent: -9999px;
+	cursor: pointer;
+	background: url('images/bullets.png') no-repeat center -20px;
+	height: 20px;
+	width: 20px;
+	display: block;
+}
+
+#slider_pagination li a:hover {
+	background: url('images/bullets.png') no-repeat center 2px;
+}
+
+#slider_pagination li a.on {
+	background: url('images/bullets.png') no-repeat center 2px;
+}
+
+
+/* @end */
+
+
+/* @group BLOG */
+
+.content_banner {
+	background-color: #506DBC;
+	margin: 27px 0 30px;
+	display: block;
+	height: 33px;
+	-moz-box-shadow: 0px 0px 1px #999;
+	-webkit-box-shadow: 0px 0px 1px #999;
+	box-shadow: 0px 0px 1px #999;
+	font-weight: normal;
+}
+
+.content_banner span {
+	font: 1.2em 'LeagueGothicRegular';
+	text-transform: uppercase;
+	letter-spacing: .6px;
+	color: rgba(255, 255, 255, 0.95);
+	padding: 6px 15px 4px;
+	display: inline-block;
+}
+
+.content_banner span a {
+	font-family: 'LeagueGothicRegular';
+	color: rgba(255, 255, 255, 0.95);
+	opacity: .9;
+	text-decoration: none;
+}
+
+#swtch_recent.swtch {
+	background-color: #A91625;
+	border-right: 2px solid #f5f5f5;
+}
+
+#swtch_pop.swtch {
+	padding-left: 11px;
+}
+
+select.popular_filter {
+	font-size: 13px;
+	text-transform: none;
+	margin-left: 12px;
+	position: relative;
+	top: -3px;
+}
+
+#blog_roll ul {
+	width: auto;
+	margin: 0 0 -20px;
+	padding: 0 !important;
+	list-style: none;
+	float: left;
+}
+
+#blog_roll li {
+	background-color: #f5f5f5;
+	width: 300px;
+	height: 425px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+	
+	-moz-box-shadow: 0px 0px 1px #999;
+  -webkit-box-shadow: 0px 0px 1px #999;
+  box-shadow: 0px 0px 1px #999;
+}
+
+#blog_roll li:nth-child(2n+2) { 
+	margin-right: 0;
+}
+
+#blog_roll .category_link {
+	border-bottom: 5px solid #506DBC;	
+}
+
+#blog_roll .category_link a {
+	font: 18px 'LeagueGothicRegular';
+	text-transform: uppercase;
+	text-decoration: none !important;
+	letter-spacing: .3px;
+	color: #222;
+	display: block;
+	padding: 2px 5px;
+	padding-top: 4px;
+	border: 1px solid #a8a7a7;
+	border-bottom: 0;
+	background-color: rgb(233, 236, 247);
+}
+
+.category_link a:hover {
+	color: #A91625 !important;
+}
+
+#blog_roll .entry-content {
+	padding: 0 15px;
+	display: inline-block;
+}
+
+#blog_roll .entry-title {
+	margin-top:  10px;
+	margin-bottom: 5px;
+}
+
+#blog_roll .entry-content p {
+	margin: 0;
+}
+
+#blog_roll .entry-utility {
+	padding: 5px 15px;
+}
+
+.pagination {
+	clear: both;
+	text-align: center;
+	
+}
+
+.pagination a, 
+span.current {
+
+	text-decoration: none;
+	margin-right: 5px;
+	padding: 4px 8px;
+	background: #f5f5f5;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	-moz-box-shadow: 0px 0px 1px #999;
+	-webkit-box-shadow: 0px 0px 1px #999;
+	box-shadow: 0px 0px 1px #999;
+}
+
+span.current {
+	background: #999;
+	color: blue;
+}
+
+.pagination a:nth-last-of-type(1) {
+	margin: 0;
+}
+
+
+
+/* @end */
+
+/* @group CONTACT FORM */
+
+label, 
+#contact_form span, 
+#contact_form input, 
+select, 
+textarea  {
+	display: inline-block;
+}
+
+#contact_form {
+	float: left;
+	width: 388px;
+}
+
+legend {
+	color: #999;
+	font-size: 0.75em;
+}
+
+legend em, 
+label em {
+	color: #A91625;
+	font-size: 1.5em;
+}
+
+#contact_form hr {
+	border-color: #bac5e4;
+	width: 388px;
+	float: left;
+	margin: 5px 0px 0;
+}
+
+#contact_form hr:nth-of-type(2) {
+	opacity: .9;
+	border: none;
+	border-bottom: 1px dashed #506DBC;
+	margin-top: 2px;
+	margin-bottom: 20px;
+}
+
+
+label {
+	font-weight: bold;
+	height: 20px;
+	margin-bottom: 3px;
+	clear: left;
+}
+
+label>em {
+	color: #A91625;
+	font-size: 1em;
+	position: relative;
+	bottom: 8px;
+	left: 4px;
+}
+
+label+span  {
+	font-size: 0.75em;
+	font-style: italic;
+	color: #999;
+	margin-top: 3px;
+	margin-left: 8px;
+}
+
+label+span.error {
+	color: #A91625;
+}
+
+#contact_form input {
+	width: 382px;
+	height: 25px;
+}
+
+fieldset .selects {
+	margin-bottom: 10px;
+	padding: 10px;
+	padding-top: 5px;
+}
+
+fieldset .selects select:last-child {
+	margin-bottom: 5px;
+}
+
+textarea {
+	width: 382px;
+	height: 200px;
+}
+
+#contact_form input, 
+textarea {
+	font: 0.9em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
+	background-color: #f5f5f5;
+	margin-bottom: 15px;
+	padding-right: 0;
+}
+
+#contact_form input, 
+textarea, 
+fieldset .selects {
+	border: 1px solid #ccc;
+}
+
+#contact_form input, 
+textarea {
+	padding-left: 6px;
+}
+
+#contact_form input:focus, 
+textarea:focus, 
+select:focus, 
+button:focus {
+	outline: none;
+	border: 1px solid #60b4d6;
+}
+
+#contact_form input, 
+textarea, 
+fieldset .selects, 
+button {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+button, 
+input#goog-wm-sb {
+	font: 20px 'LeagueGothicRegular';
+	text-transform: uppercase;
+	color: #fff;
+	opacity: .9;
+	background: #506DBC;
+	width: 138px;
+	height: 33px;
+	margin-right: 10px;
+	padding: 0px;
+	padding-top: 2px;
+	float: left;
+	border: none;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
+button, 
+input#goog-wm-sb {
+	-moz-box-shadow: 0px 0px 1px #a5a5a5;
+	-webkit-box-shadow: 0px 0px 1px #a5a5a5;
+	box-shadow: 0px 0px 1px #a5a5a5;
+}
+
+button:hover,
+input#goog-wm-sb:hover {
+	background: #A91625;
+}
+
+#msg_sts img {
+	margin-top: -5px;
+}
+
+#msg_sts span {
+	margin-top: 7px;
+	margin-left: 5px;
+}
+
+/* @end */
+
+
+/* @group SIDEBAR */
+
+#sidebar {
+	width: 300px;
+	float: right;
+}
+
+#sidebar ul {
+	list-style: none;
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+
+#sidebar li {
+	float: left;
+}
+.widget-container {
+}
+#channels {
+	text-indent: -9999px;
+	width: 100px;
+	margin-top: 1px;
+	float: left;
+}
+
+#channels a {
+	height: 28px;
+	width: 28px;
+	margin-right: 5px;
+	display: block;
+	float: left;
+}
+
+#twitter_but {
+	background: url('images/icon_sprite.png') no-repeat 0 0;
+}
+
+#facebk_but {
+	background: url('images/icon_sprite.png') no-repeat -30px 0;
+}
+
+#rss_but {
+	background: url('images/icon_sprite.png') no-repeat -60px 0;
+}
+
+#twitter_but:hover {
+	background: url('images/icon_sprite.png') no-repeat 0 -30px;
+}
+
+#facebk_but:hover {
+	background: url('images/icon_sprite.png') no-repeat -30px -30px;
+}
+
+#rss_but:hover {
+	background: url('images/icon_sprite.png') no-repeat -60px -30px;
+}
+
+#search_form {
+	float: left;
+	display: block;
+	width: 200px;
+	height: 29px;
+}
+
+#search_form label {
+	display: none;
+}
+
+input[type=search] {
+	font-size: 12px;
+	height: 18px;
+	width: 164px;
+	padding: 5px 25px 3px 8px;
+	background: #f5f5f5;
+	border: 1px solid #ccc;
+	-webkit-appearance: textfield;  
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px; 
+	border-radius: 15px; 
+	
+}
+::-webkit-search-cancel-button { 
+	display: none; 
+}
+
+#search_submit {
+	height: 18px;
+	width: 18px;
+	padding: 0;
+	text-indent: -9999px;
+	background: url('images/icon_sprite.png') no-repeat -92px -5px;
+	border: none;
+	position: relative;
+	top: -25px;
+	left: 175px;
+}
+
+#search_submit:hover {
+	background: url('images/icon_sprite.png') no-repeat -92px -27px;
+}
+
+#donate {
+	background: url('images/arrow_bckgnd.png') no-repeat;
+	height: 73px;
+	margin-bottom: 20px;
+	margin-right: -10px;
+	width: 240px;
+	margin-top: 0;
+	padding: 0 0 0 15px;
+}
+
+#donate li {
+	width: inherit;
+	margin: 0;
+}
+
+#donate h3 {
+	margin: 0 20px 0 0;
+}
+
+#donate h3 a {
+	font: 1.5em/1em 'LeagueGothicRegular';
+	color: rgba(255, 255, 255, 0.95);
+	padding-top: 10px;
+	display: block;
+	letter-spacing: 0.6px;
+}
+
+#donate p {
+	color: rgba(255, 255, 255, 0.95);
+	margin: 0 20px 0 0;
+	font-size: .8em;
+	text-align: center;
+	margin-right: 40px;
+	float: left;
+	clear: both;
+}
+
+.social_chnls {
+	margin-top: 20px;
+	float: left;
+}
+
+.social_chnls h3, .EventsPostWidget h3, .widget-container h3 {
+	font-family: 'LeagueGothicRegular';
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: .8px;
+	background-color: #506DBC;
+	margin: 0;
+	padding: 7px 15px 5px;
+	color: #fff;
+	}
+.EventsPostWidget h3 a{
+	color: #fff;
+}
+.social_chnls h3, .social_chnls h3 a {
+	color: rgba(255, 255, 255, 0.95);
+	letter-spacing: .6px;
+}
+#flickr {
+	width: 100%; /** necessary to adjust #flickr img width and height **/
+}
+#flickr img {
+	margin: 3px 3px 0 0;
+	width: 24%;
+	height: 24%;
+}
+#twitter {
+	background-color: #f5f5f5;
+	
+	-moz-box-shadow: 0px 0px 1px #999;
+	-webkit-box-shadow: 0px 0px 1px #999;
+	box-shadow: 0px 0px 1px #999;
+}
+
+#twitter ul{
+	width: 270px;
+	margin: 0;
+	padding: 15px;
+}
+
+#twitter li, .EventsPostWidget li{
+	font-size: .8em;
+	padding: 10px 0;
+	border-bottom: 1px solid #e0e5f3;
+}
+.EventsPostWidget li {
+	margin-bottom: 20px;
+}
+.EventsPostWidget li:last-child {
+	margin-bottom: 0px;
+}
+#twitter li:nth-of-type(1) {
+	padding-top: 0;
+}
+
+#twitter li:nth-last-of-type(1), .EventsPostWidget li:nth-last-of-type(1) {
+	border-bottom: none;
+}
+#facebook-widget{
+	background-color: #F5F5F5;
+}
+.fb-like {
+	margin: 15px 10px;
+}
+.EventsPostWidget {
+	background: rgba(255, 255, 255, 0.95);
+	margin-top: 0px;
+
+}
+.EventsPostWidget ul {
+	width: 270px !important;
+	padding: 15px !important;
+	margin-top: 0 !important;
+}
+.EventsPostWidget ul li p {
+	margin: 0;
+	font-size: 13px;
+	width: 230px;
+	float: right;
+}
+.more-events{
+	float: right;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: normal;
+}
+.more-events a {
+	text-decoration: none;
+	color: #A91625;
+	font-family: 'LeagueGothicRegular';
+	font-size: 18px;
+	font-style: italic;
+	letter-spacing: 0.3px;
+}
+/*facebook style border remove */
+body.transparent_widget{
+  background: white !important;
+}
+.fbConnectWidgetTopmost{
+  border: 0px !important;
+  background: #FFF !important;
+}
+
+
+/* @end */
+
+/* @end */
+
+/* @group FOOTER */
+
+#main_footer {
+	height: 180px;
+	padding: 15px 0;
+	clear: both;
+}
+
+#menu-footer-nav a {
+	margin-right: 15px;
+	font: 1.1em 'LeagueGothicRegular';
+	text-transform: uppercase;
+	color: #333;
+}
+
+#menu-footer-nav a:hover {
+	color: #A91625;
+}
+
+#menu-footer-nav .current-menu-item a,
+#menu-footer-nav .current-page-ancestor a {
+	color: #A91625;
+}
+
+#ijdh_info {
+	float: right;
+	text-align: right;
+	font-size: .85em;
+}
+
+#ijdh_info p:nth-of-type(1) {
+	margin-top: 0;
+}
+
+
+
+/* @end */
+
+/* @group MEDIA QUERIES */
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* @end */
+
+/* @group PRINT */
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; 
+  zoom: 1; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+/* @end */
+
+/* TESTING */
+li{
+	list-style: none;
+}
+.widget_meta ul li {
+	float: none !important;
+	width: 100%;
+	display: inline-block;
+}
+#date{
+	height: auto;
+	width: 30px;;
+	font-size: 23px;
+	line-height: 1;
+	text-align: center;
+	float: left;
+	margin-left: 0;
+	font-family: 'LeagueGothicRegular';
+	margin-right: 10px;
+	padding: 0px;
+	overflow: hidden;
+	font-weight: 200;
+	display: inline;
+}
+#date a {
+	text-align: center;
+	text-decoration: none;
+}
+#date .day, .month{
+	padding: 0;
+}
+#date .month{
+	color: #506DBC;
+	text-transform: uppercase;
+}
+
+.thankyou{
+	width: 940px;
+	margin: 10px auto;
+	clear: both;
+}
+.thankyou h4 {
+	font-family: "Oswald", Arial, sans-serif;
+	font-weight: 600;
+	font-size: 53px;
+	color: #2a2a2a;
+	margin: 0;
+	padding: 0;
+}
+.thankyou p {
+	padding: 0;
+	margin: 0;
+	
+}
+body.page-id-1322 .content, body.page-child .content, body.parent-pageid-30341 .content{
+	overflow: hidden;
+}
+
