@@ -10,16 +10,133 @@ img{
 	header{
 		width: auto;
 	}
+	
 	header h1{
+		width: auto;
+		height: auto;
+		margin: 0.5em auto;
+	}
+	
+	header h1 a{
+		width: 65%;
+		height: auto;
 	}
 	nav#access, .utility, #donate, .content_banner{
 		display: none;
 	}
 	/* post */
-	#most_recent li.post{
+	#most_recent li.post, #primary{
 		float: none;
 		clear: both;
 		width: 100%;
+	}
+	#sidebar{
+		clear: left;
+		float: none;
+		display: none;
+	}
+	
+	#container{
+		width: 100%;
+		padding-top: 0.5em !important;
+	}
+	
+	#main_footer, #ijdh_info, #wrapper, #content{
+		width: 100%;
+	}
+	
+	#content{
+		padding: 0;
+	}
+	
+	.content {
+		width: 85% !important;
+		padding: 1.250em 5%;
+		margin: 0 2.5%;
+	}
+	
+	.thankyou{
+		width: 95%;
+		margin: 0 2.5%;
+	}
+	
+	#blog_roll ul {
+		width: 95%;
+		margin: 0 2.5%;
+	}
+	
+	#blog_roll li{
+		height: auto;
+	}
+	
+	#blog_roll .entry-content{
+		padding-bottom: 1.250em;
+	}
+	
+	body.blog .entry-content{
+		width: auto;
+	}
+	
+	#slider_container{
+		width: 100%;
+		height: auto;
+		}
+	
+	#slider{
+		width: 100%;
+	}
+	
+	#slider img[style]{
+		width: auto !important;
+		height:	auto !important;
+	}
+		
+	.post-info {
+		width: 94%;
+		padding: 0.500em 3% 0.625em !important;
+	}
+	
+	
+	#ijdh_info{
+		margin-top: 1.250em;
+		text-align: center;
+	}
+	
+	#menu-footer-nav li{
+		display: block;
+		width: 95%;
+		margin: 0 2.45%;
+		border: thin solid rgba(0,0,0,0.3);
+		border-top: none;
+	}
+	
+	#menu-footer-nav li:first-child{
+		border-top: thin solid rgba(0,0,0,0.3);
+		border-top-left-radius: 0.25em;
+		border-top-right-radius: 0.25em;
+	}
+	
+	#menu-footer-nav li:last-child{
+		border-top: none;
+		border-bottom-left-radius: 0.25em;
+		border-bottom-right-radius: 0.25em;
+	}
+	
+	#menu-footer-nav a{
+		font-size: 1.5em;
+		display: block;
+		width: 94%;
+		padding: 0.25em 0 0.25em 3%;
+	}
+	
+	
+	
+	#contact_form{
+		width: 100%;
+	}
+	
+	#contact_form input{
+		width: 90%;
 	}
 }
 /********************************************************************************/
