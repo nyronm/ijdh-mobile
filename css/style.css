@@ -1,3 +1,54 @@
+/********************************************************************************/
+/********************************************************************************/
+/*                             MEDIA 960 and lower                              */
+/********************************************************************************/
+/********************************************************************************/
+
+@media only screen and ( max-width: 960px ){
+
+	/*header, #container {
+		width:940px;
+	}
+*/
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+@media only screen and ( max-width: 650px ){
+
+	nav {width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+}
+/********************************************************************************/
+/********************************************************************************/
+/*                                                                              */
+/********************************************************************************/
+/********************************************************************************/
+
+#social{
+	display: none;
+}
 img{
 	max-width: 100%;
 }
@@ -21,7 +72,7 @@ img{
 		width: 65%;
 		height: auto;
 	}
-	nav#access, .utility, #donate, .content_banner{
+	nav#access, .utility, #donate{
 		display: none;
 	}
 	/* post */
@@ -58,6 +109,10 @@ img{
 	.thankyou{
 		width: 95%;
 		margin: 0 2.5%;
+	}
+
+	.thankyou h4{
+		font-size: 120%;
 	}
 	
 	#blog_roll ul {
@@ -105,15 +160,21 @@ img{
 	#menu-footer-nav li{
 		display: block;
 		width: 95%;
-		margin: 0 2.45%;
-		border: thin solid rgba(0,0,0,0.3);
+		margin: 0 2.5%;
+		border: thin solid rgba(180,180,180,1);
 		border-top: none;
+		-webkit-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	box-sizing: border-box;
 	}
 	
 	#menu-footer-nav li:first-child{
-		border-top: thin solid rgba(0,0,0,0.3);
+		border-top: thin solid rgba(180,180,180,1);
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
+		-webkit-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	box-sizing: border-box;
 	}
 	
 	#menu-footer-nav li:last-child{
@@ -125,7 +186,7 @@ img{
 	#menu-footer-nav a{
 		font-size: 1.5em;
 		display: block;
-		width: 94%;
+		width: 97%;
 		padding: 0.25em 0 0.25em 3%;
 	}
 	
@@ -138,6 +199,56 @@ img{
 	#contact_form input{
 		width: 90%;
 	}
+	
+	#social{
+		float:right;
+		width: 95%;
+		height: 2.5em;
+		padding: 0 2.5%;
+		margin-top: 0.75em;
+	}
+	
+	#social img{
+		height: 40px;
+		width: auto;
+		float: left;
+	}
+	
+	#social p{
+		float: left;
+	}
+	
+	#tw-link{
+		display: block;
+		float: left;
+		width: 50%;
+		border: thin solid rgba(180,180,180,1);
+		border-top-left-radius: 0.25em;
+		border-bottom-left-radius: 0.25em;
+		border-right: none;
+		/*padding: 0.25em 0;
+		line-height: 1.5em;*/
+		-webkit-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	box-sizing: border-box;
+	}
+	
+	#fb-link{
+		display: block;
+		float: left;
+		width: 50%;
+		border: thin solid rgba(180,180,180,1);
+		border-top-right-radius: 0.25em;
+		border-bottom-right-radius: 0.25em;
+		/*padding: 0.25em 0;
+		line-height: 1.5em;*/
+		-webkit-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	box-sizing: border-box;
+	}
+	#social{
+	display: block;
+}
 }
 /********************************************************************************/
 /********************************************************************************/
